@@ -12,5 +12,6 @@
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "git.ignoreLimitWarning": true
 }
