@@ -13,5 +13,7 @@
     "javascript": "jsx"
   },
   "editor.formatOnSave": true,
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "todo-tree.flat": false,
+  "todo-tree.expanded": false
 }

@@ -46,6 +46,7 @@ class CreateProfile extends Component {
   onSubmit(e) {
     e.preventDefault();
 
+    //TODO try destructure
     const profileData = {
       handle: this.state.handle,
       company: this.state.company,
