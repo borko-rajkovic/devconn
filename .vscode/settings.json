@@ -14,6 +14,6 @@
   },
   "editor.formatOnSave": true,
   "git.ignoreLimitWarning": true,
-  "todo-tree.flat": false,
+  "todo-tree.flat": true,
   "todo-tree.expanded": false
 }
