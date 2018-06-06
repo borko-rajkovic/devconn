@@ -64,7 +64,7 @@ class Dashboard extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1 className="display-4">Dashboard</h1>
+              <h1 className="display-4">Dashboard test</h1>
               {dashboardContent}
             </div>
           </div>
@@ -86,6 +86,7 @@ const mapStateToProps = state => ({
   auth: state.auth
 });
 
-export default connect(mapStateToProps, { getCurrentProfile, deleteAccount })(
-  Dashboard
-);
+export default connect(
+  mapStateToProps,
+  { getCurrentProfile, deleteAccount }
+)(Dashboard);
