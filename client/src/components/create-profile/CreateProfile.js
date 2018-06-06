@@ -46,21 +46,8 @@ class CreateProfile extends Component {
   onSubmit(e) {
     e.preventDefault();
 
-    //TODO try destructure
     const profileData = {
-      handle: this.state.handle,
-      company: this.state.company,
-      website: this.state.website,
-      location: this.state.location,
-      status: this.state.status,
-      skills: this.state.skills,
-      githubusername: this.state.githubusername,
-      bio: this.state.bio,
-      twitter: this.state.twitter,
-      facebook: this.state.facebook,
-      linkedin: this.state.linkedin,
-      youtube: this.state.youtube,
-      instagram: this.state.instagram
+      ...this.state
     };
 
     this.props.createProfile(profileData, this.props.history);
@@ -256,6 +243,7 @@ const mapStateToProps = state => ({
   errors: state.errors
 });
 
-export default connect(mapStateToProps, { createProfile })(
-  withRouter(CreateProfile)
-);
+export default connect(
+  mapStateToProps,
+  { createProfile }
+)(withRouter(CreateProfile));
